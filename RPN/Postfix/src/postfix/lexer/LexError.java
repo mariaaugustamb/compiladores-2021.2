@@ -13,21 +13,16 @@
  *     Henrique Rebelo      initial design and implementation 
  *     http://www.cin.ufpe.br/~hemr/
  * ******************************************************************/
+
+package postfix.lexer;
+
 /**
  * @author Henrique Rebelo
  */
-public class Token {
+public class LexError extends RuntimeException{
+	private static final long serialVersionUID = 1L;
 
-	public final TokenType type; // token type
-	public final String lexeme; // token value
-
-	public Token(TokenType type, String value) {
-		this.type = type;
-		this.lexeme = value;
-	}
-
-	@Override
-	public String toString() {
-		return "Token [type=" + this.type + ", lexeme=" + this.lexeme + "]";
+	public LexError(String msg) {
+		super(msg);
 	}
 }

@@ -14,6 +14,8 @@
  *     http://www.cin.ufpe.br/~hemr/
  * ******************************************************************/
 
+package postfix.lexer;
+
 /**
  * @author Henrique Rebelo
  */
@@ -24,6 +26,9 @@ public enum TokenType {
 
 	// Single-character tokens for operations.
 	MINUS, PLUS, SLASH, STAR,
+	
+	// ID
+	ID,
 
 	EOF
 
